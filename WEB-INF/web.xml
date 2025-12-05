@@ -1,0 +1,33 @@
+<web-app>
+
+    <!-- 入力JSP (任意) -->
+    <servlet>
+        <servlet-name>gitnjp</servlet-name>
+        <jsp-file>/gitnjp.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>gitnjp</servlet-name>
+        <url-pattern>/gitnjp</url-pattern>
+    </servlet-mapping>
+
+    <!-- サーブレット -->
+    <servlet>
+        <servlet-name>namehobby</servlet-name>
+        <servlet-class>NameHobbyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>namehobby</servlet-name>
+        <url-pattern>/namehobby</url-pattern>
+    </servlet-mapping>
+
+    <!-- 出力JSP (任意) -->
+    <servlet>
+        <servlet-name>result</servlet-name>
+        <jsp-file>/result.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>result</servlet-name>
+        <url-pattern>/result</url-pattern>
+    </servlet-mapping>
+
+</web-app>
